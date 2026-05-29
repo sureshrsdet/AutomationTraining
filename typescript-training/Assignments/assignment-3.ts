@@ -14,7 +14,7 @@ for (let i: number = 0; i < studentNames.length; i++) {
 }
 
 let total: number = 0;
-for (let i: number = 0; i < addedStudentMarks.length; i++) {
-  total += addedStudentMarks[i];
+for (let mark of addedStudentMarks) {
+  total += mark;
 }
 console.log(`Average Marks: ${total / addedStudentMarks.length}`);
